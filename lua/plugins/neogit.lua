@@ -8,5 +8,13 @@ return {
     "nvim-telescope/telescope.nvim", -- optional
     "ibhagwan/fzf-lua", -- optional
   },
-  config = true,
+  -- config = true,
+  config = function()
+    require("neogit").setup({
+      integrations = {
+        diffview = true,
+      },
+    })
+    vim.keymap.set("n", "<leader>gD", ":DiffviewOpen<CR>", { noremap = true, silent = true })
+  end,
 }
