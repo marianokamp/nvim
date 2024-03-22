@@ -12,7 +12,7 @@ return {
   config = function()
     require("neogit").setup({
       integrations = {
-        diffview = true,
+        --  diffview = true,
       },
     })
     vim.keymap.set("n", "<leader>gD", ":DiffviewOpen<CR>", { noremap = true, silent = true })
