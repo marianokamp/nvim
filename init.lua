@@ -10,6 +10,5 @@ vim.diagnostic.config({
   virtual_text = false,
   float = { border = "rounded" },
 })
-
-vim.g.lazyvim_python_lsp = "basedpyright"
--- vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
+--vim.g.lazyvim_python_lsp = "pyright"
+--vim.g.lazyvim_python_ruff = "ruff_lsp"

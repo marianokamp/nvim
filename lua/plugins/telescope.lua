@@ -1,6 +1,10 @@
 return {
   -- change some telescope options and a keymap to browse plugin files
   {
+    -- Telescope UI Select extension
+    "nvim-telescope/telescope-ui-select.nvim",
+  },
+  {
     "nvim-telescope/telescope.nvim",
     keys = {
       -- add a keymap to browse plugin files
