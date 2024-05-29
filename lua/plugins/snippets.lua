@@ -12,6 +12,8 @@ return {
 
     -- Ensure LuaSnip is loaded with friendly snippets
     require("luasnip.loaders.from_vscode").lazy_load()
+    -- Load custom Lua snippets
+    require("luasnip.loaders.from_lua").lazy_load({ paths = "~/.config/nvim/lua/snippets" })
 
     cmp.setup({
       snippet = {
