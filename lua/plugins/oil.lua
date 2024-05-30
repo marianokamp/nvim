@@ -9,6 +9,7 @@ return {
           ["<C-h>"] = false,
           ["<M-h>"] = "actions.select_split",
         },
+        default_file_explorer = false,
         view_options = {
           show_hidden = true,
         },
