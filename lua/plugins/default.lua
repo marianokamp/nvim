@@ -17,8 +17,8 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
-
+  -- { "folke/trouble.nvim", enabled = false },
+  --
   -- add symbols-outline
   {
     "simrat39/symbols-outline.nvim",
