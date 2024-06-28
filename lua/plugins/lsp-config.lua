@@ -47,6 +47,12 @@ return {
           format_on_save(client, buffer)
         end,
       })
+      -- HTML LSP
+      lspconfig.html.setup({
+        on_attach = function(client, buffer)
+          format_on_save(client, buffer)
+        end,
+      })
     end,
   },
 }

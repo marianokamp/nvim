@@ -16,3 +16,5 @@ vim.diagnostic.config({
 })
 --vim.g.lazyvim_python_lsp = "pyright"
 --vim.g.lazyvim_python_ruff = "ruff_lsp"
+vim.o.updatetime = 10000
+vim.o.shortmess = vim.o.shortmess:gsub("c", "")

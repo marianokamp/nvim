@@ -6,6 +6,7 @@ return {
       "pyright",
       "ruff_lsp",
       "lua_ls",
+      "html",
     },
   },
 }
