@@ -18,3 +18,15 @@ vim.diagnostic.config({
 --vim.g.lazyvim_python_ruff = "ruff_lsp"
 vim.o.updatetime = 10000
 vim.o.shortmess = vim.o.shortmess:gsub("c", "")
+
+require("lualine").setup({
+  sections = {
+    lualine_x = {
+      {
+        require("noice").api.statusline.mode.get,
+        cond = require("noice").api.statusline.mode.has,
+        color = { fg = "#ff9e64" },
+      },
+    },
+  },
+})
