@@ -53,6 +53,12 @@ return {
           format_on_save(client, buffer)
         end,
       })
+      -- YAML LSP
+      lspconfig.yamlls.setup({
+        on_attach = function(client, buffer)
+          format_on_save(client, buffer)
+        end,
+      })
     end,
   },
 }

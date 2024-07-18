@@ -7,6 +7,7 @@ return {
       "ruff_lsp",
       "lua_ls",
       "html",
+      "yamlls",
     },
   },
 }
